@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thimar_app/core/ui/already_have_password.dart';
+import 'package:thimar_app/core/ui/authentication_button.dart';
 import 'package:thimar_app/core/ui/logo.dart';
 import 'package:thimar_app/core/ui/password_input.dart';
 import 'package:thimar_app/core/ui/phone_number_field.dart';
@@ -68,24 +69,7 @@ class ClientRegisterView extends StatelessWidget {
               SizedBox(height: 16),
               PasswordInput(),
               SizedBox(height: 24),
-              SizedBox(
-                height: 60,
-                width: double.infinity,
-                child: FilledButton(
-                  onPressed: () {},
-                  style: FilledButton.styleFrom(
-                    backgroundColor: Color(0xff4C8613),
-                  ),
-                  child: Text(
-                    'تسجيل الدخول',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15,
-                      fontFamily: "Tajawal",
-                    ),
-                  ),
-                ),
-              ),
+              authentication_button(text: 'تسجيل'),
 
               SizedBox(height: 50),
               Center(child: AlreadyHavePassword()),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thimar_app/core/ui/already_have_password.dart';
+import 'package:thimar_app/core/ui/authentication_button.dart';
 import 'package:thimar_app/core/ui/phone_number_field.dart';
 import 'package:thimar_app/core/ui/logo.dart';
 import 'package:thimar_app/core/ui/password_input.dart';
@@ -53,27 +54,10 @@ class LoginView extends StatelessWidget {
               ),
             ),
             SizedBox(height: 34),
-            SizedBox(
-              height: 60,
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: () {},
-                style: FilledButton.styleFrom(
-                  backgroundColor: Color(0xff4C8613),
-                ),
-                child: Text(
-                  'تسجيل الدخول',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 15,
-                    fontFamily: "Tajawal",
-                  ),
-                ),
-              ),
-            ),
+            authentication_button(text: 'تسجيل الدخول'),
 
             Spacer(),
-            Center(child: AlreadyHavePassword()),
+            Center(child: AlreadyHavePassword(),),
           ],
         ),
       ),
