@@ -7,7 +7,7 @@ class Logo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: AlignmentDirectional.center,
-      child: Image.asset('assets/images/logo (2).png'),
+      child: Image.asset('assets/images/logo.png'),
     );
   }
 }
